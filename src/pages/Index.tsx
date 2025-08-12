@@ -70,6 +70,7 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">Портфолио</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
+              { title: "Не смотри назад", genre: "Психологический хоррор", year: "2025", image: "https://cdn.poehali.dev/files/0e04b0b2-5da0-4afa-84f4-8bee86825803.jpeg", inDevelopment: true },
               { title: "Тени прошлого", genre: "Мистический триллер", year: "2024", image: "/img/6ff4e1b4-9622-489d-8629-1a2d01e176fb.jpg" },
               { title: "Звёздная пыль", genre: "Фантастика", year: "2023", image: "/img/cda50418-e8ba-4341-b8ed-dca76a82c57a.jpg" },
               { title: "Последний акт", genre: "Драма", year: "2023", image: "/img/477461b8-e770-4960-a074-fd0689de6d23.jpg" },
@@ -86,9 +87,19 @@ const Index = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    {project.inDevelopment && (
+                      <div className="absolute top-4 right-4">
+                        <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
+                          В РАЗРАБОТКЕ
+                        </div>
+                      </div>
+                    )}
                     <div className="absolute bottom-4 left-4 right-4">
                       <h3 className="text-xl font-bold text-white mb-1">{project.title}</h3>
                       <p className="text-primary text-sm">{project.genre} • {project.year}</p>
+                      {project.inDevelopment && (
+                        <p className="text-white/80 text-xs mt-1">Готов в течение месяца</p>
+                      )}
                     </div>
                   </div>
                 </CardContent>
