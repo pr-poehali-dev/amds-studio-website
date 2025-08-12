@@ -70,13 +70,7 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">Портфолио</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Не смотри назад", genre: "Психологический хоррор", year: "2025", image: "https://cdn.poehali.dev/files/0e04b0b2-5da0-4afa-84f4-8bee86825803.jpeg", inDevelopment: true },
-              { title: "Тени прошлого", genre: "Мистический триллер", year: "2024", image: "/img/6ff4e1b4-9622-489d-8629-1a2d01e176fb.jpg" },
-              { title: "Звёздная пыль", genre: "Фантастика", year: "2023", image: "/img/cda50418-e8ba-4341-b8ed-dca76a82c57a.jpg" },
-              { title: "Последний акт", genre: "Драма", year: "2023", image: "/img/477461b8-e770-4960-a074-fd0689de6d23.jpg" },
-              { title: "Зеркала", genre: "Психологический триллер", year: "2024", image: "/img/6ff4e1b4-9622-489d-8629-1a2d01e176fb.jpg" },
-              { title: "Элементы", genre: "Фэнтези", year: "2022", image: "/img/cda50418-e8ba-4341-b8ed-dca76a82c57a.jpg" },
-              { title: "Время остановилось", genre: "Научная фантастика", year: "2024", image: "/img/477461b8-e770-4960-a074-fd0689de6d23.jpg" }
+              { title: "Не смотри назад", genre: "Психологический хоррор", year: "2025", image: "https://cdn.poehali.dev/files/0e04b0b2-5da0-4afa-84f4-8bee86825803.jpeg", inDevelopment: true }
             ].map((project, index) => (
               <Card key={index} className="bg-card border-border hover:border-primary/50 transition-all duration-300 group cursor-pointer">
                 <CardContent className="p-0">
@@ -120,15 +114,15 @@ const Index = () => {
             <div className="space-y-6">
               <div className="flex items-center justify-center space-x-4">
                 <Icon name="Mail" size={24} className="text-primary" />
-                <span className="text-lg">info@amds-studio.com</span>
+                <span className="text-lg">info.adms-studio@list.ru</span>
               </div>
               <div className="flex items-center justify-center space-x-4">
                 <Icon name="Phone" size={24} className="text-primary" />
-                <span className="text-lg">+7 (999) 123-45-67</span>
+                <span className="text-lg">+7-932-059-87-33</span>
               </div>
               <div className="flex items-center justify-center space-x-4">
                 <Icon name="MapPin" size={24} className="text-primary" />
-                <span className="text-lg">Москва, Россия</span>
+                <span className="text-lg">Бузулук, Россия</span>
               </div>
             </div>
             <div className="mt-12">
